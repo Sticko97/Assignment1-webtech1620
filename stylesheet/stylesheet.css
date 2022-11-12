@@ -1,7 +1,8 @@
 body {
     background-color: #e1ccb3;
     display:grid;
-    grid-template-rows: 100% repeat(auto-fill, 999px);
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    /* grid-template-rows: 100% repeat(auto-fill, 999px); */
     grid-template-columns: 25% 20% 20% 20% 20%;
     position:relative;
 
