@@ -1,0 +1,39 @@
+body {
+    background-color: #e1ccb3;
+    display:grid;
+    grid-template-rows: 100% repeat(auto-fill, 999px);
+    grid-template-columns: 25% 20% 20% 20% 20%;
+    position:relative;
+
+}
+
+.leftside {
+    background-color: #F9F3EC;
+    grid-column:25%;
+}
+
+ul {
+    list-style-type: square;
+}
+
+h1 {
+    text-align:center;
+    font-family: 'Montserrat', sans-serif;
+    color: #5394A0;
+    font-size: 40px;
+}
+
+/* work on placing About Docs to rightside of the page */
+nav ul{
+    
+    list-style-type: none;
+    /* justify-content: right;
+    text-align: right; */
+}
+
+.rightside{
+    grid-column: 2fr;
+}
+
+
+
