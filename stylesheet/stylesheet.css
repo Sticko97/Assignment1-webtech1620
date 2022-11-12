@@ -5,25 +5,38 @@ body {
     /* grid-template-rows: 100% repeat(auto-fill, 999px); */
     /* grid-template-columns: 25% 20% 20% 20% 20%;
     position:relative; */
-    display:flex;
+    display:flexbox;
     min-height: 100vh;
     margin:0;
 }
-
-.rightside{
-    /* grid-column: 2fr; */
+.page_container{
     display:flex;
     width: 100%;
     min-height:100%;
-    order:2;
+    /* position:relative; */
+}
+.rightside{
+    /* grid-column: 2fr; */
+    /* display:flex;
+    width: 100%;
+    min-height:100%;
+    order:1;
+    position:relative; */
+    flex:1;
+    flex-basis: 0%;
+}
+#title{
+    text-align: center;
+    display:flex;
+
 }
 
 .leftside {
     background-color: #F9F3EC;
-    position:relative;
+    /* position:relative; */
     order:-1;
     display:flex;
-    width:50%;
+    /* width:50%; */
     /* grid-column:25%; */
 }
 
@@ -35,10 +48,15 @@ body {
     overflow:auto;
     width: 25%;
 }
+
+div {
+    display:block;
+
+}
 .nav{
     position:fixed;
     display:flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     overflow: hidden;
     box-sizing: border-box;
 }
@@ -54,6 +72,9 @@ h1 {
     font-size: 40px;
 }
 
+main{
+    display:block;
+}
 /* work on placing About Docs to rightside of the page */
 /* nav ul{
     list-style-type: none; */
