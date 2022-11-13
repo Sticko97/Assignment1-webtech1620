@@ -1,5 +1,5 @@
 body {
-    background-color: #e1ccb3;
+    background-color: #e7ddcf;
     /* display:grid;
     grid-template-rows: 20% 20% 20% 20% 20%; */
     /* grid-template-rows: 100% repeat(auto-fill, 999px); */
@@ -47,10 +47,11 @@ title{
     margin: 50px; */
     align-items: flex-end;
     justify-content: flex-end;
-    min-width: 5%;
+    min-width: 3%;
     padding-right: 10px;
     font-family: 'Montserrat', sans-serif;
     color: #5394A0;
+    margin-bottom: 25px;
 }
 
 
@@ -87,7 +88,9 @@ title{
 .newnote{
     background:#5394A0;
     padding: 30px;
-    margin: 10px;
+    margin-right: 1200px;
+    margin-bottom: 20px;
+    border:none;
     border-radius: 10px;
     flex-shrink: 0;
     font-family: 'Montserrat', sans-serif;
@@ -97,8 +100,10 @@ title{
 .darktheme{
     background:#6F6A87;
     padding:30px;
-    margin:10px;
+    margin-right:15px;
+    margin-bottom: 20px;
     flex-shrink: 0;
+    border:none;
     border-radius: 10px;
     font-family: 'Montserrat', sans-serif;
     color: white;
@@ -112,7 +117,6 @@ title{
 }
 
 .textbox{
-    /* width: 800px; */
     /* position: relative; */
     /* padding: auto; */
     border-radius: 8px;
@@ -131,6 +135,7 @@ textarea{
     background:#5394A0;
     padding: 30px;
     margin: 15px;
+    border:none;
     border-radius: 10px;
     flex-shrink: 0;
     font-family: 'Montserrat', sans-serif;
@@ -139,9 +144,10 @@ textarea{
 }
 
 .cancel{
-    background:#fa594ea9;
+    background:#D9827C;
     padding: 30px;
     margin: 15px;
+    border:none;
     border-radius: 10px;
     flex-shrink: 0;
     font-family: 'Montserrat', sans-serif;
@@ -160,3 +166,13 @@ h1 {
     font-size: 40px;
 }
 
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    text-align:center;
+    font-family: 'Montserrat', sans-serif;
+    color: #5394A0;
+    font-size: 40px;
+}
