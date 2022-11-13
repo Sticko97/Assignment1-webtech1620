@@ -6,7 +6,7 @@ body {
     /* grid-template-columns: 25% 20% 20% 20% 20%;
     position:relative; */
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     min-height: 100vh;
     margin:0;
     /* align-items: stretch; */
@@ -14,7 +14,7 @@ body {
 }
 .page_container{
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     min-height:100%;
     /* flex:wrap; */
@@ -36,7 +36,7 @@ body {
 title{
     position: relative;
     left: 150px;
-    /* text-align: center; */
+    text-align: center;
     /* display:flex; */
     justify-content: center;
 }
@@ -83,8 +83,6 @@ title{
     /* padding:100px */
 }
 .newnote{
-    display:flex;
-    justify-content: flex-end;
     background:#5394A0;
     padding: 30px;
     margin: 10px;
@@ -93,27 +91,35 @@ title{
     
 }
 .darktheme{
-    justify-content: end;
-    position: relative;
-    display:inline-flex;
     background:#6F6A87;
     padding:30px;
     margin:10px;
     flex-shrink: 0;
 }
 
-.textbox{
+.textboxparent{
     display:flex;
-    align-items: center;
-    justify-content: center;
-    padding: 25px;
-    max-width: 100%;
-    line-height: 1.5;
-    border-radius: 5px;
-    border: 1px solid #5394A0;
-    box-shadow: 1px 1px 1px #5394A0;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-shrink: 0;
 }
 
+.textbox{
+    /* width: 800px; */
+    /* position: relative; */
+    /* padding: auto; */
+    border-radius: 8px;
+    border: 5px solid #5394A0;
+    background-color: azure;
+    margin-right: 10px;
+    flex-shrink:0;
+}
+
+textarea{
+    border-radius: 8px;
+    background-color:azure;
+    border: none;
+}
 
 aside ul {
     list-style-type: square;
