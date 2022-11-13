@@ -49,6 +49,8 @@ title{
     justify-content: flex-end;
     min-width: 5%;
     padding-right: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: #5394A0;
 }
 
 
@@ -88,6 +90,8 @@ title{
     margin: 10px;
     border-radius: 10px;
     flex-shrink: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
     
 }
 .darktheme{
@@ -95,6 +99,9 @@ title{
     padding:30px;
     margin:10px;
     flex-shrink: 0;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
 }
 
 .textboxparent{
@@ -120,7 +127,27 @@ textarea{
     background-color:azure;
     border: none;
 }
+.save{
+    background:#5394A0;
+    padding: 30px;
+    margin: 15px;
+    border-radius: 10px;
+    flex-shrink: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin-top: 25px
+}
 
+.cancel{
+    background:#fa594ea9;
+    padding: 30px;
+    margin: 15px;
+    border-radius: 10px;
+    flex-shrink: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin-top: 25px;
+}
 aside ul {
     list-style-type: square;
     position:relative;
