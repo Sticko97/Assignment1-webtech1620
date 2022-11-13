@@ -6,6 +6,7 @@ body {
     /* grid-template-columns: 25% 20% 20% 20% 20%;
     position:relative; */
     display:flex;
+    flex-direction: row;
     min-height: 100vh;
     margin:0;
     /* align-items: stretch; */
@@ -13,7 +14,7 @@ body {
 }
 .page_container{
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     min-height:100%;
     /* flex:wrap; */
@@ -50,14 +51,7 @@ title{
     padding-right: 10px;
 }
 
-/* main ul{ */
-    /* display:inline-block; */
-    /* justify-content: right; */
-    /* margin-left: auto; */
-    /* right: 100px; */
-    /* z-index: auto; */
-    /* position:absolute; */
-/* } */
+
 .leftside {
     background-color: #F9F3EC;
     /* position:relative; */
@@ -70,18 +64,18 @@ title{
 .leftcontent{
     background-color: #F9F3EC;
     position: absolute;
+    /* position: relative; */
     min-height: 100%;
     align-items: stretch;
     /* top: 0; */
     /* bottom:0; */
     overflow:auto;
     width: 20%;
+    flex:1;
+    flex-basis: 0%;
+    order: -1;
 }
 
-/* div {
-    display:block; */
-
-/* } */
 .buttons{
     display:flex;
     justify-content: flex-end;
@@ -112,15 +106,14 @@ title{
     display:flex;
     align-items: center;
     justify-content: center;
+    padding: 25px;
+    max-width: 100%;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #5394A0;
+    box-shadow: 1px 1px 1px #5394A0;
 }
 
-/* .nav{ */
-    /* position:fixed; */
-    /* display:flex; */
-    /* flex-direction: column; */
-    /* overflow: hidden; */
-    /* box-sizing: border-box; */
-/* } */
 
 aside ul {
     list-style-type: square;
@@ -134,12 +127,3 @@ h1 {
     font-size: 40px;
 }
 
-/* main{
-    display:block;
-} */
-/* work on placing About Docs to rightside of the page */
-/* nav ul{
-    list-style-type: none; */
-    /* justify-content: right;
-    text-align: right; */
-/* } */
