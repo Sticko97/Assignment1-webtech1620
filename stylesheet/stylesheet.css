@@ -5,7 +5,7 @@ body {
     /* grid-template-rows: 100% repeat(auto-fill, 999px); */
     /* grid-template-columns: 25% 20% 20% 20% 20%;
     position:relative; */
-    display:flexbox;
+    display:flex;
     min-height: 100vh;
     margin:0;
 }
@@ -15,6 +15,7 @@ body {
     min-height:100%;
     /* position:relative; */
 }
+
 .rightside{
     /* grid-column: 2fr; */
     /* display:flex;
@@ -25,12 +26,21 @@ body {
     flex:1;
     flex-basis: 0%;
 }
-#title{
-    text-align: center;
-    display:flex;
-
+.title{
+    position: relative;
+    left: 150px;
+    /* text-align: center; */
+    /* display:flex; */
+    justify-content: center;
 }
-
+main ul{
+    display:inline-block;
+    /* justify-content: right; */
+    /* margin-left: auto; */
+    right: 100px;
+    /* z-index: auto; */
+    position:absolute;
+}
 .leftside {
     background-color: #F9F3EC;
     /* position:relative; */
@@ -46,23 +56,41 @@ body {
     top: 0;
     bottom:0;
     overflow:auto;
-    width: 25%;
+    width: 20%;
 }
 
 div {
     display:block;
 
 }
-.nav{
-    position:fixed;
+.buttons{
     display:flex;
-    /* flex-direction: column; */
-    overflow: hidden;
-    box-sizing: border-box;
+    justify-content: flex-end;
+    /* padding:100px */
+}
+.newnote{
+    display:flex;
+    justify-content: flex-end;
+}
+.darktheme{
+    justify-content: end;
+    position: relative;
+    display:inline-flex
 }
 
-nav ul {
+
+
+/* .nav{ */
+    /* position:fixed; */
+    /* display:flex; */
+    /* flex-direction: column; */
+    /* overflow: hidden; */
+    /* box-sizing: border-box; */
+/* } */
+
+aside ul {
     list-style-type: square;
+    position:relative;
 }
 
 h1 {
