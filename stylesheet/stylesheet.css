@@ -5,33 +5,39 @@ body {
     /* grid-template-rows: 100% repeat(auto-fill, 999px); */
     /* grid-template-columns: 25% 20% 20% 20% 20%;
     position:relative; */
-    display:flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin:0;
+    /* display:flex; */
+    /* flex-direction: column; */
+    /* min-height: 100vh; */
+    /* margin:0; */
+    border:2px rgb(43, 0, 255) solid;
+    /* order: 2; */
     /* align-items: stretch; */
-    ;
+
 }
 .page_container{
     display:flex;
-    flex-direction: column;
-    width: 100%;
-    min-height:100%;
+    flex-direction: row;
+    /* width: 100%; */
+    /* min-height:100%; */
     /* flex:wrap; */
-    border:1px red solid;
+    border:2px red solid;
     /* position:relative; */
 }
 
 .rightside{
     /* grid-column: 2fr; */
-    /* display:flex;
-    width: 100%;
-    min-height:100%;
-    order:1;
-    position:relative; */
-    min-height: 100%;
-    flex:1;
-    flex-basis: 0%;
+    display:flex;
+    width: 500px;
+    height:750px;
+    order: 2;
+    /* justify-content: flex-end; */
+    /* align-items: flex-end; */
+    /* min-height:100%; */
+    /* order:1; */
+    /* position:relative; */
+    /* min-height: 100%; */
+    /* flex:1; */
+    /* flex-basis: 0%; */
 }
 title{
     position: relative;
@@ -58,25 +64,27 @@ title{
 .leftside {
     background-color: #F9F3EC;
     /* position:relative; */
-    order:-1;
+    order:1;
     display:flex;
-    /* width:50%; */
+    /* display:flex; */
+    width:20%;
+    height:750px;
     /* grid-column:25%; */
 }
 
 .leftcontent{
-    background-color: #F9F3EC;
-    position: absolute;
+    /* background-color: #F9F3EC; */
+    /* position: absolute; */
     /* position: relative; */
-    min-height: 100%;
-    align-items: stretch;
+    /* min-height: 100%; */
+    /* align-items: stretch; */
     /* top: 0; */
     /* bottom:0; */
-    overflow:auto;
-    width: 20%;
-    flex:1;
-    flex-basis: 0%;
-    order: -1;
+    /* overflow:auto; */
+    /* width: 20%; */
+    /* flex:1; */
+    /* flex-basis: 0%; */
+    /* order: -1; */
 }
 
 .buttons{
@@ -157,9 +165,12 @@ textarea{
 aside ul {
     list-style-type: square;
     position:relative;
+    font-family: 'Montserrat', sans-serif;
+    color: #5394A0;
 }
 
 h1 {
+    display:flex;
     text-align:center;
     font-family: 'Montserrat', sans-serif;
     color: #5394A0;
