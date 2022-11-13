@@ -8,11 +8,16 @@ body {
     display:flex;
     min-height: 100vh;
     margin:0;
+    /* align-items: stretch; */
+    ;
 }
 .page_container{
     display:flex;
+    flex-direction: column;
     width: 100%;
     min-height:100%;
+    /* flex:wrap; */
+    border:1px red solid;
     /* position:relative; */
 }
 
@@ -23,6 +28,7 @@ body {
     min-height:100%;
     order:1;
     position:relative; */
+    min-height: 100%;
     flex:1;
     flex-basis: 0%;
 }
@@ -35,9 +41,10 @@ body {
 }
 .pp{
     /* display:inline-block; */
-    right: 100px;
     position:relative;
+    right: 100%;
     margin: 50px;
+    justify-content: flex-end;
 }
 /* main ul{ */
     /* display:inline-block; */
@@ -58,17 +65,19 @@ body {
 
 .leftcontent{
     background-color: #F9F3EC;
-    position: fixed;
-    top: 0;
-    bottom:0;
+    position: absolute;
+    /* min-height: 100%; */
+    align-items: stretch;
+    /* top: 0; */
+    /* bottom:0; */
     overflow:auto;
     width: 20%;
 }
 
-div {
-    display:block;
+/* div {
+    display:block; */
 
-}
+/* } */
 .buttons{
     display:flex;
     justify-content: flex-end;
@@ -91,7 +100,11 @@ div {
     margin:10px;
 }
 
-
+.textbox{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* .nav{ */
     /* position:fixed; */
@@ -113,9 +126,9 @@ h1 {
     font-size: 40px;
 }
 
-main{
+/* main{
     display:block;
-}
+} */
 /* work on placing About Docs to rightside of the page */
 /* nav ul{
     list-style-type: none; */
