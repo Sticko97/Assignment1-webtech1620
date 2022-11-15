@@ -119,7 +119,10 @@ textarea{
     background-color:azure;
     border: none;
     width:100%;
-    align-items: left;
+}
+::placeholder{
+    color: black;
+    font-size: 25px;
 }
 
 .bbottom{
